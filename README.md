@@ -8,7 +8,7 @@
    - Usuário....( )
    - Coleção....( )
    - Item.......( )
- - ( ) Deve utilizar Java
+ - (X) Deve utilizar Java
  - ( ) Deve utilizar Javalin
  - ( ) Deve armazenar os dados em banco de dados relacional
  - ( ) Deve utilizar as boas práticas abordadas em sala (separação de responsabilidades, encapsulamento, etc)
