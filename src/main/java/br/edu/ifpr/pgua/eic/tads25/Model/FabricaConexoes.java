@@ -3,7 +3,6 @@ package br.edu.ifpr.pgua.eic.tads25.Model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 import br.edu.ifpr.pgua.eic.tads25.Utils.Env;
 
 public class FabricaConexoes {
@@ -28,7 +27,7 @@ public class FabricaConexoes {
     }
 
     public static FabricaConexoes getInstance() {
-        if (instance != null) {
+        if (instance != null) { 
             return instance;
         }
         instance = new FabricaConexoes();

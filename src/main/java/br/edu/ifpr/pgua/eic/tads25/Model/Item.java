@@ -10,8 +10,16 @@ public class Item {
 	private int qtdeCurtidas;
 	private Date criadoEm;
 
+    public Item() {}
     public Item(int idItem, int idColecao, String nome, String observacoes, int qtdeCurtidas, Date criadoEm) {
         this.idItem = idItem;
+        this.idColecao = idColecao;
+        this.nome = nome;
+        this.observacoes = observacoes;
+        this.qtdeCurtidas = qtdeCurtidas;
+        this.criadoEm = criadoEm;
+    }
+    public Item(int idColecao, String nome, String observacoes, int qtdeCurtidas, Date criadoEm) {
         this.idColecao = idColecao;
         this.nome = nome;
         this.observacoes = observacoes;

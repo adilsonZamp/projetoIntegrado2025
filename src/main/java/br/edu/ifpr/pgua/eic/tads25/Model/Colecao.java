@@ -12,8 +12,17 @@ public class Colecao {
 	private int qtdeCurtidas;
 	private Date criadaEm;
     
+    public Colecao() {}
     public Colecao(int idColecao, String nome, String descricao, Blob fotoCapa, int qtdeFavoritos, int qtdeCurtidas, Date criadaEm) {
         this.idColecao = idColecao;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.fotoCapa = fotoCapa;
+        this.qtdeFavoritos = qtdeFavoritos;
+        this.qtdeCurtidas = qtdeCurtidas;
+        this.criadaEm = criadaEm;
+    }
+    public Colecao(String nome, String descricao, Blob fotoCapa, int qtdeFavoritos, int qtdeCurtidas, Date criadaEm) {
         this.nome = nome;
         this.descricao = descricao;
         this.fotoCapa = fotoCapa;

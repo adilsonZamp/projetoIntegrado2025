@@ -10,8 +10,14 @@ public class Usuario {
 	private Blob fotoPerfil;
 	private Date membroDesde;
 
-    public Usuario( int idUsuario, String nome, String email, Blob fotoPerfil, Date membroDesde) {
+    public Usuario(int idUsuario, String nome, String email, Blob fotoPerfil, Date membroDesde) {
         this.idUsuario = idUsuario;
+        this.nome = nome;
+        this.email = email;
+        this.fotoPerfil = fotoPerfil;
+        this.membroDesde = membroDesde;
+    }
+    public Usuario(String nome, String email, Blob fotoPerfil, Date membroDesde) {
         this.nome = nome;
         this.email = email;
         this.fotoPerfil = fotoPerfil;
