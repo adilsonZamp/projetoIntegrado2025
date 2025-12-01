@@ -6,5 +6,5 @@ public interface ItemDAO {
     public Item cadastrarItem(Item item);
     public boolean modificarItem(Item item);
     public boolean deletarItem(int idItem);
-    public Item listarItem(int idItem);
+    public Item detalharItem(int idItem);
 }

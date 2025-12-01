@@ -2,6 +2,7 @@ package br.edu.ifpr.pgua.eic.tads25.Model;
 
 import java.sql.Blob;
 import java.sql.Date;
+import java.util.ArrayList;
 
 public class Colecao {
     private int idColecao;
@@ -11,9 +12,10 @@ public class Colecao {
 	private int qtdeFavoritos;
 	private int qtdeCurtidas;
 	private Date criadaEm;
+    private ArrayList<Item> itens;
     
     public Colecao() {}
-    public Colecao(int idColecao, String nome, String descricao, Blob fotoCapa, int qtdeFavoritos, int qtdeCurtidas, Date criadaEm) {
+    public Colecao(int idColecao, String nome, String descricao, Blob fotoCapa, int qtdeFavoritos, int qtdeCurtidas, Date criadaEm, ArrayList<Item> itens) {
         this.idColecao = idColecao;
         this.nome = nome;
         this.descricao = descricao;
@@ -21,16 +23,24 @@ public class Colecao {
         this.qtdeFavoritos = qtdeFavoritos;
         this.qtdeCurtidas = qtdeCurtidas;
         this.criadaEm = criadaEm;
+        this.itens = itens;
     }
-    public Colecao(String nome, String descricao, Blob fotoCapa, int qtdeFavoritos, int qtdeCurtidas, Date criadaEm) {
+    public Colecao(String nome, String descricao, Blob fotoCapa, int qtdeFavoritos, int qtdeCurtidas, Date criadaEm, ArrayList<Item> itens) {
         this.nome = nome;
         this.descricao = descricao;
         this.fotoCapa = fotoCapa;
         this.qtdeFavoritos = qtdeFavoritos;
         this.qtdeCurtidas = qtdeCurtidas;
         this.criadaEm = criadaEm;
+        this.itens = itens;
     }
     
+    public ArrayList<Item> getItens() {
+        return itens;
+    }
+    public void setItens(ArrayList<Item> itens) {
+        this.itens = itens;
+    }
     public int getIdColecao() {
         return idColecao;
     }

@@ -132,7 +132,7 @@ public class JDBCColecaoDAO implements ColecaoDAO {
         try (Connection con = fabricaConexoes.getConnection()) {
             ArrayList<Item> listaItens = new ArrayList<>();
 
-            String sql = ""; // responsabilidade do JDBCItem
+            String sql = "select i. * from pi_colecao c, pi_item i WHERE i.idColecao = c.idColecao and c.idColecao = ?"; // responsabilidade do JDBCItem
             PreparedStatement pstmt = con.prepareStatement(sql);
             pstmt.setInt(1, idColecao);
             

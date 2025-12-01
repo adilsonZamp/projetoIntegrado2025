@@ -2,6 +2,7 @@ package br.edu.ifpr.pgua.eic.tads25.Model;
 
 import java.sql.Blob;
 import java.sql.Date;
+import java.util.ArrayList;
 
 public class Usuario {
     private int idUsuario;
@@ -9,19 +10,22 @@ public class Usuario {
 	private String email;
 	private Blob fotoPerfil;
 	private Date membroDesde;
+    private ArrayList<Colecao> colecoes;
 
-    public Usuario(int idUsuario, String nome, String email, Blob fotoPerfil, Date membroDesde) {
+    public Usuario(int idUsuario, String nome, String email, Blob fotoPerfil, Date membroDesde, ArrayList<Colecao> colecoes) {
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.email = email;
         this.fotoPerfil = fotoPerfil;
         this.membroDesde = membroDesde;
+        this.colecoes = colecoes;
     }
-    public Usuario(String nome, String email, Blob fotoPerfil, Date membroDesde) {
+    public Usuario(String nome, String email, Blob fotoPerfil, Date membroDesde, ArrayList<Colecao> colecoes) {
         this.nome = nome;
         this.email = email;
         this.fotoPerfil = fotoPerfil;
         this.membroDesde = membroDesde;
+        this.colecoes = colecoes;
     }
 
     public int getIdUsuario() {
@@ -53,5 +57,11 @@ public class Usuario {
     }
     public void setMembroDesde(Date membroDesde) {
         this.membroDesde = membroDesde;
+    }
+    public ArrayList<Colecao> getColecoes() {
+        return colecoes;
+    }
+    public void setColecoes(ArrayList<Colecao> colecoes) {
+        this.colecoes = colecoes;
     }
 }
