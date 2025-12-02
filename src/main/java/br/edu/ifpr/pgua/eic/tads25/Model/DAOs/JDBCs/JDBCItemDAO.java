@@ -67,7 +67,7 @@ public class JDBCItemDAO implements ItemDAO {
             return false;
         }
     }
-
+ 
     @Override
     public boolean deletarItem(int idItem) {
         try (Connection con = fabrica.getConnection()) {
