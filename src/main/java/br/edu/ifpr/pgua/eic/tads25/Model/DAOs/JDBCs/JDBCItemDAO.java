@@ -115,5 +115,4 @@ public class JDBCItemDAO implements ItemDAO {
             return null;
         }
     }
-    
 }

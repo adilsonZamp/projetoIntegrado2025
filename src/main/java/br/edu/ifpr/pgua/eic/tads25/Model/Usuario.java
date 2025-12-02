@@ -12,6 +12,7 @@ public class Usuario {
 	private Date membroDesde;
     private ArrayList<Colecao> colecoes;
 
+    public Usuario(){};
     public Usuario(int idUsuario, String nome, String email, Blob fotoPerfil, Date membroDesde, ArrayList<Colecao> colecoes) {
         this.idUsuario = idUsuario;
         this.nome = nome;
