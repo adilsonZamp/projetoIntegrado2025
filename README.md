@@ -4,12 +4,12 @@
    - Cadastrar, Listar, Modificar e Excluir Coleções....( )
    - Cadastrar, Listar, Modificar e Excluir Itens.......( )
    - Favoritar Coleções e Curtir Itens..................( )
- - ( ) Deve possuir no mínimo 3 CRUDs (3 entidades diferentes);
-   - Usuário....( )
-   - Coleção....( )
-   - Item.......( )
+ - (X) Deve possuir no mínimo 3 CRUDs (3 entidades diferentes);
+   - Usuário....(X)
+   - Coleção....(X)
+   - Item.......(X)
  - (X) Deve utilizar Java
- - ( ) Deve utilizar Javalin
+ - (X) Deve utilizar Javalin
  - ( ) Deve armazenar os dados em banco de dados relacional
  - ( ) Deve utilizar as boas práticas abordadas em sala (separação de responsabilidades, encapsulamento, etc)
  - ( ) Deve utilizar os padrões de projeto abordados em sala de aula
